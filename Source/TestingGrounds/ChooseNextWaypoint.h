@@ -17,6 +17,11 @@ class TESTINGGROUNDS_API UChooseNextWaypoint : public UBTTaskNode
 	
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
+protected:
+
+	// Create editable property for waypoints in Patrol Behavior Tree/Blackboard
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+		struct FBlackboardKeySelector IndexKey;
 	
 	
 };
