@@ -22,6 +22,9 @@ protected:
 	// Create editable property for waypoints in Patrol Behavior Tree/Blackboard
 	UPROPERTY(EditAnywhere, Category = "Blackboard")
 		struct FBlackboardKeySelector IndexKey;
+
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
+		struct FBlackboardKeySelector WaypointKey;
 	
 	
 };
